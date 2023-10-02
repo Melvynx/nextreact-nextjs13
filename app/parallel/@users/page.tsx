@@ -1,0 +1,20 @@
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+
+export default function page() {
+  throw new Error("This is an error")
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle>/parallel/@users</CardTitle>
+        <CardDescription>List of users</CardDescription>
+      </CardHeader>
+      <CardContent>Some users...</CardContent>
+    </Card>
+  )
+}

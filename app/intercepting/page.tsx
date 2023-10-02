@@ -1,6 +1,5 @@
 import Link from "next/link"
 
-import { siteConfig } from "@/config/site"
 import { buttonVariants } from "@/components/ui/button"
 import {
   Card,
@@ -10,12 +9,12 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 
-export default function IndexPage() {
+export default function page() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>/</CardTitle>
-        <CardDescription>The home page of {siteConfig.name}</CardDescription>
+        <CardTitle>/intercepting</CardTitle>
+        <CardDescription>base intercepting page</CardDescription>
       </CardHeader>
       <CardContent className="flex flex-wrap gap-2">
         <Link
@@ -23,36 +22,27 @@ export default function IndexPage() {
             variant: "secondary",
             size: "sm",
           })}
-          href="/routes"
+          href="/intercepting/pictures/1"
         >
-          Routing files
+          pictures 1
         </Link>
         <Link
           className={buttonVariants({
             variant: "secondary",
             size: "sm",
           })}
-          href="/groups"
+          href="/intercepting/pictures/2"
         >
-          Groups
+          pictures 2
         </Link>
         <Link
           className={buttonVariants({
             variant: "secondary",
             size: "sm",
           })}
-          href="/parallel"
+          href="/intercepting/pictures/3"
         >
-          Parallel
-        </Link>
-        <Link
-          className={buttonVariants({
-            variant: "secondary",
-            size: "sm",
-          })}
-          href="/intercepting"
-        >
-          Intercepting
+          pictures 3
         </Link>
       </CardContent>
     </Card>
