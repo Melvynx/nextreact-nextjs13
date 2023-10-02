@@ -11,8 +11,8 @@ export const siteConfig = {
     },
   ],
   links: {
-    twitter: "https://twitter.com/shadcn",
-    github: "https://github.com/shadcn/ui",
-    docs: "https://ui.shadcn.com",
+    twitter: "https://twitter.com/melvynxdev",
+    github: "https://github.com/Melvynx/nextreact-nextjs13-routing",
+    docs: "https://codelynx.dev/nextreact/nextjs",
   },
 }

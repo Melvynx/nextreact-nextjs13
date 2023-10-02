@@ -8,6 +8,9 @@ export const BackButton = () => {
   const router = useRouter()
   return (
     <Button
+      variant="outline"
+      size="sm"
+      className="w-fit"
       onClick={() => {
         router.back()
       }}
