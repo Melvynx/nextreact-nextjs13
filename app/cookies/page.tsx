@@ -15,11 +15,8 @@ export default function Page() {
       </CardHeader>
       <CardContent className="flex flex-col gap-4">
         {cookieStore.getAll().map((cookie) => (
-          <form>
-            <div
-              key={cookie.name}
-              className="rounded border-2 border-dashed p-4"
-            >
+          <form key={cookie.name}>
+            <div className="rounded border-2 border-dashed p-4">
               <Typography>
                 Name: <Typography variant="code">{cookie.name}</Typography>
               </Typography>
