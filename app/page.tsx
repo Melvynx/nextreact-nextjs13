@@ -54,6 +54,24 @@ export default function IndexPage() {
         >
           Intercepting
         </Link>
+        <Link
+          className={buttonVariants({
+            variant: "secondary",
+            size: "sm",
+          })}
+          href="/cookies"
+        >
+          Cookies
+        </Link>
+        <Link
+          className={buttonVariants({
+            variant: "secondary",
+            size: "sm",
+          })}
+          href="/headers"
+        >
+          Headers
+        </Link>
       </CardContent>
     </Card>
   )
