@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { LucideIcon, LucideProps, Moon, SunMedium, Twitter } from "lucide-react"
 
 export type Icon = LucideIcon
