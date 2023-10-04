@@ -15,6 +15,10 @@ export const updateUser = async (
     email: string
   }
 ) => {
+  if (data.username === "error") {
+    throw new Error("Invalid data")
+  }
+
   const parsed =
     data.username.toLocaleUpperCase() + " x " + data.email.toLocaleUpperCase()
 

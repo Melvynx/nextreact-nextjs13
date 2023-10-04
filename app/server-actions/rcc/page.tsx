@@ -31,12 +31,17 @@ export default function Page() {
     const username = formData.get("username") as string
     const email = formData.get("email") as string
 
-    await updateUser("id", {
-      username,
-      email,
-    })
+    try {
+      await updateUser("id", {
+        username,
+        email,
+      })
 
-    alert("User successfully updated")
+      alert("User successfully updated")
+    } catch (e: unknown) {
+      const error = e as Error
+      alert(error.message)
+    }
   }
 
   return (
