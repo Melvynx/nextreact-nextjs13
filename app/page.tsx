@@ -72,6 +72,16 @@ export default function IndexPage() {
         >
           Headers
         </Link>
+
+        <Link
+          className={buttonVariants({
+            variant: "secondary",
+            size: "sm",
+          })}
+          href="/server-actions"
+        >
+          Server Actions
+        </Link>
       </CardContent>
     </Card>
   )
