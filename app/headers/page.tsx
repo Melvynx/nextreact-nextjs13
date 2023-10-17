@@ -24,7 +24,7 @@ export default function Page() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Cookies</CardTitle>
+        <CardTitle>Headers</CardTitle>
       </CardHeader>
       <CardContent className="flex flex-col gap-4">{jsx}</CardContent>
     </Card>
